@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            JAVA Sorting Problem
+        </title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/JavaScript">
+        var arr=new Array(7,8,9,5,3,2);
+        var i,j,temp;
+        document.write("<br/>  <br/> Before Sorting <br/>");
+        for(i=0;i<6;i++){
+            document.write(arr[i]+"<br/>");
+        }
+
+        for(i=0;i<6;i++) {
+            for(j=0;j<5;j++) {
+                if(arr[j] > arr[j+1]) {
+                   temp=arr[j];
+                   arr[j]=arr[j+1];
+                   arr[j+1]=temp;
+                }
+            }
+        }
+        document.write("<br/>  <br/> After  Sorting <br/>")
+        for(i=0;i<6;i++){
+            document.write(arr[i]+"<br/>");
+        }
+        </script>
+    </body>
+</html>

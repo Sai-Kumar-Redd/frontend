@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChange</title>
+    <script>
+        function handleOnChangeEvent(x){
+            window.location=x;
+
+        }
+
+    </script>
+</head>
+<body>
+    <select onchange="handleOnChangeEvent(this.value)">
+        <h1>Select the website which you want</h1>
+    <option value="">Select the website</option>
+    <option value="http://www.wikipedia.com ">wikipedia</option>
+    <option value="http://www.google.com">Google</option>
+    <option value="http://www.yahoo.com">yahoo</option>
+</select>
+    
+</body>
+</html>

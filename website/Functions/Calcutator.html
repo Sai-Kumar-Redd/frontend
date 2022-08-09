@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calculate(){
+            var x=parseInt(document.calcuform.num1.value);
+            var y=parseInt(document.calcuform.num2.value);
+            var z=document.calcuform.result;
+            z.value = x+y;
+        }
+        
+    </script>
+</head>
+<body>
+    <form name="calcuform">
+        Number1:<input type="text" name="num1"/><br/>
+        Number2:<input type="text" name="num2"/><br/>
+        Result:<input type="text" name="result"/><br/>
+        <input type="button" name="Add" value="Add" onclick="calculate()"/><br/>
+    </form>
+    
+</body>
+</html>
